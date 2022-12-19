@@ -1,6 +1,10 @@
 [![CI](https://github.com/nogibjj/python-template/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/python-template/actions/workflows/cicd.yml)
 ## Template for Python projects 
 
+Follow along tutorial:
+https://www.youtube.com/watch?v=lbm9ckutS3k
+
+
 1. First thing to do on launch is to open a new shell and verify virtualenv is sourced.
 
 Things included are:
@@ -47,5 +51,14 @@ INFO:     172.17.0.1:49310 - "GET /openapi.json HTTP/1.1" 200 OK
 
 Opens browser at the forwarded port:
 https://jmandrake-psychic-couscous-7g759wg4xjfrgrg-80.preview.app.github.dev/docs
+
+
+### Run the dockerized app on AWS Cloud9
+
+1. Create a container: 
+How to: https://youtu.be/lbm9ckutS3k?t=6000
+
+https://us-east-1.console.aws.amazon.com/cloud9control/home?region=us-east-1
+
 
 
