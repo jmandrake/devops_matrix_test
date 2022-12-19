@@ -12,7 +12,7 @@ from bs4 import BeautifulSoup
 # use beautiful soup to get the text from the page url
 def get_page(url):
     """Use beautiful soup to get the page content from url"""
-    response = requests.get(url)
+    response = requests.get(url, timeout=5)
     soup = BeautifulSoup(response.text, "html.parser")
     return soup.get_text()
 
