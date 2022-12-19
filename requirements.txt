@@ -11,6 +11,6 @@ uvicorn==0.18.3
 #development-tools (optional, version does not matter)
 ipython
 #libraries-tools
-wikipedia
-geopy
+wikipedia==1.4.0
+geopy==2.3.0
 git+https://github.com/LIAAD/yake

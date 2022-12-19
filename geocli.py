@@ -6,6 +6,7 @@ for the geo tools.
 
 import click
 from mylib.geotools import get_cities, get_distance
+from mylib.wiki import get_wiki_keywords
 
 
 @click.group()
@@ -44,6 +45,22 @@ def cities():
         click.secho(f"{city}", nl=False, fg="blue")
         click.secho("\n", nl=False, fg="white")
     click.secho("\n", nl=False, fg="white")
+
+
+# create a command to get the keywords of a city
+@cli.command("keywords")
+@click.argument("city", type=str, default="New York")
+def keywords(city):
+    """Get the keywords of a city.
+    Usage: ./geocli.py keywords city
+    $ ./geocli.py keywords "New York"
+    """
+    # print(get_wiki_keywords(city))
+    keywords_list = get_wiki_keywords(city)
+    for keyword in keywords_list:
+        click.secho(f"{keyword}", nl=False, fg="blue")
+        click.secho("\n", nl=False, fg="white")
+    # click.secho("\n", nl=False, fg="white")
 
 
 if __name__ == "__main__":

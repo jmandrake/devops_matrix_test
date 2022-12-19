@@ -17,7 +17,7 @@ def get_page(search):
 
     # Print the page's title and summary
     print(page.title)
-    print(page.summary)
+    # print(page.summary)
     return page.content
 
 
@@ -25,9 +25,13 @@ def get_wiki_keywords(keyword):
     """Get keywords from wiki page"""
     content = get_page(keyword)
     kw_extractor = yake.KeywordExtractor()
-    keywords = kw_extractor.extract_keywords(content)
-    # print(keywords)
-    return keywords
+    keywords = kw_extractor.extract_keywords(content)  # list of tuples
+    keywords_list = []
+    for kwd in keywords:
+        kwd_clean = kwd[0].strip().title()
+        if kwd_clean not in keywords_list:
+            keywords_list.append(kwd[0])
+    return keywords_list
 
 
 def main(keyword):
