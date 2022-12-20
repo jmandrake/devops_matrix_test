@@ -14,8 +14,6 @@ make: *** [deploy] Error 1
 
 ## Template for Python projects 
 
-[![CodeBuild](https://codebuild.us-east-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoibERZN3ZESUE1d0dmSUIyS0RJNkZlOEJJRnBZdUtsRXlWVUdCNnlDSUFFcjFZY2xqcGV0Y1hsbUFHaGh0VkcrZlZZYTFjeVZNODNGUU1ndTcrQUx2R2dVPSIsIml2UGFyYW1ldGVyU3BlYyI6IjNZMC8yMlBNL1poeHc2d20iLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=main)]
-
 Follow along tutorial:
 https://www.youtube.com/watch?v=lbm9ckutS3k
 
