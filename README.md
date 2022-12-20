@@ -60,10 +60,16 @@ https://jmandrake-psychic-couscous-7g759wg4xjfrgrg-80.preview.app.github.dev/doc
 
 ### Run the dockerized app on AWS Cloud9
 
-1. Create a container: 
+Create a container in ECR: 
 How to: https://youtu.be/lbm9ckutS3k?t=6000
 
 https://us-east-1.console.aws.amazon.com/cloud9control/home?region=us-east-1
 
-
-
+- set configuration to auto update
+  
+ ### Run the dockerized app on Google Cloud Run
+ 1. Login to console
+ 2. git clone [repository url]
+ 3. cd into the folder
+ 4. gcloud run deploy
+  
