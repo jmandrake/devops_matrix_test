@@ -1,5 +1,17 @@
 [![CI](https://github.com/nogibjj/python-template/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/python-template/actions/workflows/cicd.yml)
 
+## To Do:Fix this error in deploy step:
+```
+Step 1/9 : FROM python:3.8.13-slim-buster
+toomanyrequests: You have reached your pull rate limit. You may increase the limit by authenticating and upgrading: https://www.docker.com/increase-rate-limit
+make: *** [deploy] Error 1
+
+[Container] 2022/12/20 02:16:52 Command did not exit successfully make all exit status 2
+[Container] 2022/12/20 02:16:52 Phase complete: BUILD State: FAILED
+[Container] 2022/12/20 02:16:52 Phase context status code: COMMAND_EXECUTION_ERROR Message: Error while executing command: make all. Reason: exit status 2
+```
+
+
 ## Template for Python projects 
 
 https://codebuild.us-east-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoibERZN3ZESUE1d0dmSUIyS0RJNkZlOEJJRnBZdUtsRXlWVUdCNnlDSUFFcjFZY2xqcGV0Y1hsbUFHaGh0VkcrZlZZYTFjeVZNODNGUU1ndTcrQUx2R2dVPSIsIml2UGFyYW1ldGVyU3BlYyI6IjNZMC8yMlBNL1poeHc2d20iLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=main
